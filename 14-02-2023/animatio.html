@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 200px;
+            width: 200px;
+            margin: 150px auto;
+            place-content: center;
+            display: grid;
+            border-top: 5px solid black;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid transparent;
+            border-right: 5px solid gray;
+            border-radius: 50%;
+            animation: loader 2s ease infinite;
+
+        }
+
+        .divsub {
+            height: 150px;
+            width: 150px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid rgb(7, 72, 72);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-radius: 50%;
+            place-content: center;
+            display: grid;
+            animation: loader 2s ease infinite;
+
+
+        }
+
+        .sub {
+            height: 100px;
+            width: 100px;
+            border-top: 5px solid black;
+            border-bottom: 5px solid greenyellow;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-radius: 50%;
+            animation: loader 2s ease infinite;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="divsub">
+            <div class="sub">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
